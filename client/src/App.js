@@ -1,6 +1,7 @@
 import TopBar from './components/TopBar';
 import RankingBox from './components/RankingBox';
 import SearchBar from './components/SearchBar';
+
 function App(){
     return (
       <div className="App">

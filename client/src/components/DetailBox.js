@@ -1,5 +1,5 @@
 import './DetailBox_style.css';
-// import DetailChart from './DetailChart';
+import DetailChart from './DetailChart';
 
 export default function DetailBox({details}){ // 상세 정보 창의 구성 정보
 
@@ -17,7 +17,7 @@ export default function DetailBox({details}){ // 상세 정보 창의 구성 정
             </div>
             <div className="detailBox_chart">
                 Detail_chart
-                {/* <DetailChart></DetailChart> */}
+                {<DetailChart/>}
             </div>
         </div>
     );

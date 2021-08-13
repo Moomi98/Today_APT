@@ -2,7 +2,7 @@ body{
     background-color: rgb(250, 250, 250);
     margin : 0;
     font-family: 'twayair';
-    width: 75%;
+    width: 50%;
     margin:auto;
 }
 
@@ -17,7 +17,6 @@ body{
     border-radius: 7px;
     margin: auto;
     margin-top:8px;
-    width: 50%;
     border :1px solid rgb(240, 240, 240);
 
 }

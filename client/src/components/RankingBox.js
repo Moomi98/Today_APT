@@ -16,7 +16,6 @@ export const RankingBoxInfo = ({propsData}) =>{  // 순위 정보 박스에 담�
     }
 
     const [detailState, setDetailState] = useState(false); // 상세 정보창이 열려 있는지의 여부를 hook을 통해 확인
-    console.log(propsData);
     const onClick = (e) =>{ // 상세 정보 버튼이 눌렸을 때 호출
         if(detailState === false){ // hook이 false이면 true 로 전환 후 검정색으로 변경
             setDetailState(true);
