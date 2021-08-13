@@ -1,0 +1,17 @@
+.detailBox_info{
+    border-radius: 7px;
+    margin-top: 15px;
+    background-color:rgb(230, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.detailBox_leftSide{
+    text-align: start;
+}
+
+.detailBox_rightSide{
+    text-align: end;
+}

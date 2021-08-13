@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(250, 250, 250);
+    margin : 0;
+    font-family: 'twayair';
+    width: 75%;
+    margin:auto;
+}
+
+.topbar{
+    background-color: rgb(235, 225, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:40px;
+    padding: 3px;
+    font-family: 'twayair';
+    border-radius: 7px;
+    margin: auto;
+    margin-top:8px;
+    width: 50%;
+    border :1px solid rgb(240, 240, 240);
+
+}
+
+.topbar_name{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.topbar_name_today{
+    margin:0;
+    margin-left: 12px;
+}
+
+.topbar_name_houseprice{
+    margin:0;
+    color:rgb(240, 148, 73);
+    margin-left: 12px;
+}
+
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

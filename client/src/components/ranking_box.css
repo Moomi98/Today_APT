@@ -1,0 +1,40 @@
+.box{
+   width: 50%;
+   border-radius: 7px;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0;
+   background-color:rgb(255, 255, 255);
+   text-align: center;
+   margin: 10px auto;
+}
+
+.apt_info{
+   border-radius: 7px;
+   margin-top: 15px;
+   background-color:rgb(240, 240, 240);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 7px;
+}
+
+.apt_info_leftSide, .apt_info_rightSide{
+   display: flex;
+   text-align: center;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 15px;
+}
+
+.detailBtn{
+   width: 20px;
+   height: 20px;
+   align-items: center;
+   border-radius : 50%;
+   border:0;
+}
+
+.apt_rank{
+   margin-right:30px;
+}

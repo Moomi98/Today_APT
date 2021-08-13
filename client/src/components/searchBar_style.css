@@ -1,0 +1,27 @@
+.searchBar{
+    display: flex;
+    width: 50%;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color:rgb(255, 255, 255);
+    margin: 10px auto;
+}
+
+.searchBar_writeBox{
+    flex: 1;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 5px;
+    margin: 7px;
+    border-radius: 7px;
+    background-color: rgb(241, 241, 241);
+}
+
+.searchBar_icon{
+    margin-left: 5px;
+    border-radius: 7px;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: white;
+}
