@@ -5,104 +5,117 @@ export function SampleData(){
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
         },
+        changedRank : 1
         },
         {rank : 2, apt_name : "xx2아파트", apt_price : "20000원", details : {
             address : "경기도 시흥시 1번지",
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
-        }
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
+        },
+        changedRank : 2
         },
         {rank : 3, apt_name : "xx3아파트", apt_price : "30000원", details : {
             address : "경기도 성남시 3번지",
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
-        }
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
+        },
+        changedRank : 0
         },
         {rank : 4, apt_name : "xx4아파트", apt_price : "40000원", details : {
             address : "경기도 성남시 4번지",
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
-        }
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
+        },
+        changedRank : -2
         },
         {rank : 5, apt_name : "xx4아파트", apt_price : "40000원", details : {
             address : "경기도 성남시 5번지",
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
-        }
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
+        },
+        changedRank : -1
         },
         {rank : 6, apt_name : "xx4아파트", apt_price : "40000원", details : {
             address : "경기도 성남시 1번지",
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
-        }
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
+        },
+        changedRank : 4
         },
         {rank : 7, apt_name : "xx4아파트", apt_price : "40000원", details : {
             address : "경기도 성남시 1번지",
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
-        }
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
+        },
+        changedRank : 2
         },
         {rank : 8, apt_name : "xx4아파트", apt_price : "40000원", details : {
             address : "경기도 성남시 21번지",
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
-        }
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
+        },
+        changedRank : -1
         },
         {rank : 9, apt_name : "xx4아파트", apt_price : "40000원", details : {
             address : "경기도 성남시 1번지",
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
-        }
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
+        },
+        changedRank : 0
         },
         {rank : 10, apt_name : "xx4아파트", apt_price : "40000원", details : {
             address : "경기도 성남시 1번지",
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
-        }
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
+        },
+        changedRank : 6
         },
         {rank : 11, apt_name : "xx4아파트", apt_price : "40000원", details : {
             address : "경기도 성남시 1번지",
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
-        }
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
+        },
+        changedRank : -5
         },
         {rank : 12, apt_name : "xx4아파트", apt_price : "40000원", details : {
             address : "경기도 성남시 1번지",
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
-        }
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
+        },
+        changedRank : -2
         },
         {rank : 13, apt_name : "xx4아파트", apt_price : "40000원", details : {
             address : "경기도 성남시 1번지",
             area : 87.236,
             yearMonthDay : "2021-07-31",
             floor : 15,
-            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9]
-        }
+            recentMonth : [11.2, 14.3, 21.1, 19.8, 20.3, 22.9],
+        },
+        changedRank : -1
         },
     ];
 

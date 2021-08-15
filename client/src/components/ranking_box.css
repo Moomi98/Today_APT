@@ -20,8 +20,8 @@
 
 .apt_info_leftSide, .apt_info_rightSide{
    display: flex;
-   text-align: center;
-   justify-content: space-between;
+   /* text-align: center; */
+   /* justify-content: space-between; */
    align-items: center;
    margin-left: 15px;
 }
@@ -35,5 +35,9 @@
 }
 
 .apt_rank{
-   margin-right:30px;
+   margin-right:3px;
+}
+
+.apt_info_changedRank{
+   margin : 0px 10px;
 }

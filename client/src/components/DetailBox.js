@@ -16,8 +16,7 @@ export default function DetailBox({details}){ // 상세 정보 창의 구성 정
                 </div>
             </div>
             <div className="detailBox_chart">
-                Detail_chart
-                {<DetailChart/>}
+                {<DetailChart recentMonthData={details.recentMonth}/>}
             </div>
         </div>
     );

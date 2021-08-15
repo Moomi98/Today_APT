@@ -1,6 +1,7 @@
 import './ranking_box.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown} from "@fortawesome/free-solid-svg-icons";
+import { faAngleUp, faAngleDown} from "@fortawesome/free-solid-svg-icons";
 import { useState } from 'react';
 import DetailBox from './DetailBox';
 import * as SampleData from './SampleData';
@@ -27,11 +28,23 @@ export const RankingBoxInfo = ({propsData}) =>{  // 순위 정보 박스에 담�
         }
     }
 
+    const SetChangedRank = () =>{
+        console.log(propsData.changedRank);
+        return propsData.changedRank > 0 ?  
+        <div className="apt_info_changedRank" style={{color : 'red'}}>
+            {propsData.changedRank}<FontAwesomeIcon icon={faAngleUp}></FontAwesomeIcon>
+        </div> :
+        <div className="apt_info_changedRank" style={{color : 'blue'}}>
+            {propsData.changedRank}<FontAwesomeIcon icon={faAngleDown}></FontAwesomeIcon>
+        </div>
+    }
+
     return(
         <div> 
             <div className="apt_info">
                 <div className="apt_info_leftSide">
                     <AptRank rank={propsData.rank}></AptRank>
+                    <SetChangedRank></SetChangedRank>
                     <p className="apt_name">{propsData.apt_name}</p>
                 </div>
                 <div className="apt_info_rightSide">

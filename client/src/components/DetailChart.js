@@ -5,7 +5,7 @@ const today = new Date();
 const year = today.getFullYear(); // 년도
 const month = today.getMonth() + 1;  // 월
 
-const recent6Month = (month) => {
+const recent6Month = (month) => { // 그래프에 최근 6개월의 리스트를 계산하여 반환해주는 함수
   const monthList = [];
 
   for(let i = 0 ; i < 6; i++){
@@ -20,9 +20,8 @@ const recent6Month = (month) => {
 
 }
 
-const DetailChart = ({recentMonthData}) => {
-  const monthList = recent6Month(month);
-  console.log(recentMonthData);
+const DetailChart = ({recentMonthData}) => { // 차트를 그리는 함수
+  const monthList = recent6Month(month); // 최근 6개월 계산
   const data = {
     labels: monthList,
     datasets: [
