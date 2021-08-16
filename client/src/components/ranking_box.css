@@ -1,4 +1,5 @@
 .box{
+   position: relative;
    border-radius: 7px;
    align-items: center;
    justify-content: space-between;
@@ -20,6 +21,8 @@
 
 .apt_info_leftSide, .apt_info_rightSide{
    display: flex;
+   position : relative;
+   left : 3px;
    /* text-align: center; */
    /* justify-content: space-between; */
    align-items: center;
@@ -35,9 +38,23 @@
 }
 
 .apt_rank{
+   position : absolute;
+   width : 10px;
    margin-right:3px;
 }
 
+.apt_name{
+   position: absolute;
+   width: 200px;
+}
+
 .apt_info_changedRank{
+   position: absolute;
+  width: 50px;
    margin : 0px 10px;
+   font-size: 12px;
+}
+
+.apt_info_changedRank_icon{
+   margin-left : 3px;
 }

@@ -9,6 +9,8 @@ import * as SampleData from './SampleData';
 
 export const RankingBoxInfo = ({propsData}) =>{  // 순위 정보 박스에 담을 내용을 렌더링
 
+    const [detailState, setDetailState] = useState(false); // 상세 정보창이 열려 있는지의 여부를 hook을 통해 확인
+
     const AptRank = (props) => { /* 순위 숫자를 렌더링하는 함수 */
         const rank = props.rank; 
         return (rank === 1 ?  /* 1위의 순위 색은 황금 색으로 변경하여 리턴 */
@@ -16,7 +18,6 @@ export const RankingBoxInfo = ({propsData}) =>{  // 순위 정보 박스에 담�
          : <p className="apt_rank" color='black'>{rank}</p>); 
     }
 
-    const [detailState, setDetailState] = useState(false); // 상세 정보창이 열려 있는지의 여부를 hook을 통해 확인
     const onClick = (e) =>{ // 상세 정보 버튼이 눌렸을 때 호출
         if(detailState === false){ // hook이 false이면 true 로 전환 후 검정색으로 변경
             setDetailState(true);
@@ -28,14 +29,13 @@ export const RankingBoxInfo = ({propsData}) =>{  // 순위 정보 박스에 담�
         }
     }
 
-    const SetChangedRank = () =>{
-        console.log(propsData.changedRank);
+    const SetChangedRank = () =>{ // 순위 변동 사항 렌더링
         return propsData.changedRank > 0 ?  
         <div className="apt_info_changedRank" style={{color : 'red'}}>
-            {propsData.changedRank}<FontAwesomeIcon icon={faAngleUp}></FontAwesomeIcon>
+            {propsData.changedRank}<FontAwesomeIcon className="apt_info_changedRank_icon" icon={faAngleUp}></FontAwesomeIcon>
         </div> :
         <div className="apt_info_changedRank" style={{color : 'blue'}}>
-            {propsData.changedRank}<FontAwesomeIcon icon={faAngleDown}></FontAwesomeIcon>
+            {propsData.changedRank}<FontAwesomeIcon className="apt_info_changedRank_icon" icon={faAngleDown}></FontAwesomeIcon>
         </div>
     }
 
