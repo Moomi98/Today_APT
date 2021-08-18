@@ -4,8 +4,7 @@ import { faChevronDown} from "@fortawesome/free-solid-svg-icons";
 import { faAngleUp, faAngleDown} from "@fortawesome/free-solid-svg-icons";
 import { useState } from 'react';
 import DetailBox from './DetailBox';
-import * as SampleData from './SampleData';
-
+import * as Data from '../process/Data'
 
 export const RankingBoxInfo = ({propsData}) =>{  // 순위 정보 박스에 담을 내용을 렌더링
 
@@ -59,11 +58,11 @@ export const RankingBoxInfo = ({propsData}) =>{  // 순위 정보 박스에 담�
     );
 }
 
-export default function RankingBox ()  {
-    
-    const aptInfo = SampleData.SampleData();
+export default async function RankingBox () {
+    const aptInfo = await Data.GetDataFromServer();
+    console.log(aptInfo);
 
-  return (
+    return (
     <div className="box">
         {aptInfo.map((item) => {return (<RankingBoxInfo key={item.rank} propsData={item}></RankingBoxInfo>)})}
     </div>
