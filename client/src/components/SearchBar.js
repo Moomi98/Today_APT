@@ -21,7 +21,7 @@ export default function SearchBar(){
         e.preventDefault(); // 기본 실행 동작(새로고침) 방지
 
         for(let i in data){ // 데이터에 검색 내용을 포함한 정보가 있는지 확인
-            if(data[i] && data[i].apt_name.includes(text)){ // data[i]가 존재하고 아파트 이름이 검색 내용을 포함하는지 확인
+            if(data[i] && data[i].aptName.includes(text)){ // data[i]가 존재하고 아파트 이름이 검색 내용을 포함하는지 확인
                 setFind(true);
                 setFindAptInfo(data[i]);
                 console.log(findAptInfo);

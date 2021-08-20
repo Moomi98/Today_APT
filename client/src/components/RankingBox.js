@@ -2,7 +2,7 @@ import './ranking_box.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown} from "@fortawesome/free-solid-svg-icons";
 import { faAngleUp, faAngleDown} from "@fortawesome/free-solid-svg-icons";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import DetailBox from './DetailBox';
 import * as Data from '../process/Data'
 
@@ -44,10 +44,10 @@ export const RankingBoxInfo = ({propsData}) =>{  // 순위 정보 박스에 담�
                 <div className="apt_info_leftSide">
                     <AptRank rank={propsData.rank}></AptRank>
                     <SetChangedRank></SetChangedRank>
-                    <p className="apt_name">{propsData.apt_name}</p>
+                    <p className="apt_name">{propsData.aptName}</p>
                 </div>
                 <div className="apt_info_rightSide">
-                    <p className="apt_price">{propsData.apt_price}</p>
+                    <p className="apt_price">{propsData.price}</p>
                     <button type="button" className="detailBtn" onClick={onClick}>
                         <FontAwesomeIcon className="detailBtn_icon" icon={faChevronDown} color="rgb(200, 200, 200)"></FontAwesomeIcon>
                     </button>
@@ -58,15 +58,36 @@ export const RankingBoxInfo = ({propsData}) =>{  // 순위 정보 박스에 담�
     );
 }
 
-export default async function RankingBox () {
-    const aptInfo = await Data.GetDataFromServer();
-    console.log(aptInfo);
+export default function RankingBox () {
+     const [data, setData] = useState([]);
 
-    return (
-    <div className="box">
-        {aptInfo.map((item) => {return (<RankingBoxInfo key={item.rank} propsData={item}></RankingBoxInfo>)})}
-    </div>
-  );
+    const changeToJson = (json) =>{
+        const aptInfo = [];
 
+        for(let i in json){
+            aptInfo.push(JSON.parse(json[i]));
+        }
+        
+        return aptInfo;
+    }
+
+    useEffect(() =>{ // 렌더링 완료 후 데이터를 집어 넣는 함수 실행
+        Data.GetDataFromServer()
+        .then((json) => changeToJson(json)).then((info) => setData(info));
+    },[])
+
+      return (
+        <div className="box">
+            {data.map((item) => {
+            console.log(item);
+            return (
+                <RankingBoxInfo
+                key={item.rank}
+                propsData={item}
+                ></RankingBoxInfo>
+            );
+            })}
+        </div>
+        );
 };
 

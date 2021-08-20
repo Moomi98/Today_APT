@@ -7,8 +7,8 @@ export default function DetailBox({details}){ // 상세 정보 창의 구성 정
         <div className="detailBox">
             <div className="detailBox_info">
                 <div className="detailBox_leftSide">
-                    <p className="detailBox_address">주소 : {details.address}</p>
-                    <p className="detailBox_yearMonthDay">일시 : {details.yearMonthDay}</p>
+                    <p className="detailBox_address">주소 : {details.address} {details.roadAddress}</p>
+                    <p className="detailBox_yearMonthDay">일시 : {details.yearMonth}{details.day}</p>
                 </div>
                 <div className="detailBox_rightSide">
                     <p className="detailBox_area">면적 : {details.area} m³</p>
