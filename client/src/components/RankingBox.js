@@ -47,7 +47,7 @@ export const RankingBoxInfo = ({propsData}) =>{  // 순위 정보 박스에 담�
                     <p className="apt_name">{propsData.aptName}</p>
                 </div>
                 <div className="apt_info_rightSide">
-                    <p className="apt_price">{propsData.price}</p>
+                    <p className="apt_price">{propsData.price}원</p>
                     <button type="button" className="detailBtn" onClick={onClick}>
                         <FontAwesomeIcon className="detailBtn_icon" icon={faChevronDown} color="rgb(200, 200, 200)"></FontAwesomeIcon>
                     </button>
