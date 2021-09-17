@@ -16,9 +16,11 @@ export const searchDataFromServer = async (text) =>{ // 검색 시 서버로부�
   console.log("searchDataFromServer()");
   try{
     const response = await axios.get("http://localhost:8080/api/get/search?aptName=" + text);
+    console.log(response.data);
     return response.data;
 
   } catch (e){
     console.log(e);
+    return null
   }
 }
